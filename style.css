@@ -1,0 +1,206 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+hr {
+    opacity: 25%;
+}
+
+.container {
+    margin: auto;
+    max-width: 500px;
+
+}
+.firstline {
+    display: flex;
+    border-radius: 10px;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 25px;
+    
+}
+.inbox {
+    font-family: 'Pacifico', cursive;
+    display: grid;
+    grid-template-columns: 22% 10%;
+    color: #50575c;
+    align-items: center;
+    width: 500px;
+    font-size: 22px;
+}
+.fa-calendar-check {
+    color:#72787c;
+}
+.icon {
+    font-size: 21px;
+    padding-left: 10px;
+    color: #72787c;
+}
+.messagebox1 {
+    width: 50px;
+    height: 50px;
+    padding-right: 30px;
+}
+.checklist1 {
+    width: 100%;
+    max-width: 500px;
+}
+.checklist {
+    padding: 8px 8px 10px 0px;
+}
+.line-ch {
+    padding: 8px 8px 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-weight: bold;
+    justify-content: center;
+    height: 40px;
+    border-bottom: 1px solid silver;
+}
+.cchw {
+    display: flex;
+    align-items: center;
+}
+.iconhomework {
+    align-self: center;
+    justify-self: right;
+    display: none;
+}
+.iconhm {
+    color:#BFBFBF;
+    margin-right: 25px;
+    font-size: 20px;
+}
+.textbar {
+    display: flex;
+    margin-top: 20px;
+}
+.textbox {
+    border: 1px solid;
+    border-image: linear-gradient(to top, rgb(146, 197, 252), rgb(218, 194, 252));
+    border-image-slice: 1;
+    height: 30px;
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    width: 67%;
+}
+.textbox:focus {
+    outline-width: 0;
+}
+.button3 {
+   display: none;
+    border: 1px solid silver;
+    border-radius: 5px;
+    height: 52px;
+    width: 27%;
+    color: silver;
+    background-color: white;
+    font-size: 14px;
+    text-align: left;
+    padding-left:10px;
+}
+.buttonline {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    padding-top: 10px;
+    
+}
+.button1 {
+    position: relative;
+    background-image: linear-gradient(to right,rgb(146, 197, 252), rgb(218, 194, 252));
+    box-shadow: 3px 3px 5px #b6b3b388;
+    font-family: 'Pacifico', cursive;
+    border-radius: 5px;
+    color: white;
+    font-weight: 525;
+    font-size: 20px;
+    padding: 10px 20px;
+    
+}
+.button1:focus {
+    outline-width: 0;
+}
+.button1:after {
+    content: "";
+    background-color: white;
+    opacity: 0;
+    width: 121px;
+    height: 55px;
+    position: absolute;
+    margin-left: -101px;
+    margin-top: -10px;
+    transition:all 0.7s;
+}
+.button1:active:after, .button1.active:after {
+    width: 0;
+    height: 0;
+    opacity: 0.8;
+    transition: 0s;
+}
+.button2 {
+    display: none;
+    background-color: white;
+    border-radius: 5px;
+    border-color: white;
+    color: rgb(134, 134, 136);
+    font-size: 20px;
+    padding: 15px 20px
+}
+.iconbutton {
+    align-self: center;
+    justify-self: right;
+    color: #30A9DE;
+}
+.button1:hover {
+    cursor: pointer;
+
+}
+.complete {
+    text-decoration: line-through;
+    color: silver;
+}
+.circle {
+    display: inline-block;
+    border: 2px solid #30A9DE;
+    background-color: #30A9DE;
+    padding: 2px;
+    border-radius: 100%;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.circle:hover {
+    cursor: pointer;
+}
+.iconhomework:hover {
+    cursor: pointer;
+}
+.line-ch:hover {
+    background-image: linear-gradient(to right,rgba(146, 197, 252, 0.24), rgba(218, 194, 252, 0.24));
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px #b6b3b349;
+    border: none;
+}
+.line-ch:hover > .iconhomework {
+    display: block;
+}
+
+.guitar:hover {
+    background-image: none;
+    box-shadow: none;
+    border-bottom: 1px solid silver;
+}
+.showiconhomework {
+    display: block;
+}
+.hidecircle {
+    display: inline-block;
+    border: 2px solid silver;
+    border-radius: 100%;
+    background-color: white;
+    color: white;
+}
